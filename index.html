@@ -3,216 +3,414 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rockstar GTA 6 Online - Latest GTA VI News, Rumors & Gaming Updates</title>
-    <meta name="description" content="Your ultimate fan-made hub for GTA 6 and Rockstar Games. Get the latest news, countdown timers, exclusive Indian gaming community interviews, and updates.">
-    <meta name="keywords" content="GTA 6, Grand Theft Auto VI, Rockstar Games, GTA 6 release date, GTA 6 countdown, Indian gaming community, GTA 6 news">
-    <meta name="robots" content="index, follow">
+    <meta name="description" content="GTA 6 Online - Get latest news, release countdown, gameplay updates, and exclusive interviews with Indian gaming creators. Your ultimate Grand Theft Auto VI fan hub.">
+    <meta name="keywords" content="GTA 6, Grand Theft Auto VI, GTA 6 release date, GTA 6 news, Rockstar Games, GTA 6 countdown, Vice City, Indian gamers, GTA 6 gameplay, GTA 6 trailer">
+    <meta name="author" content="GTA 6 Online Community">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta property="og:title" content="GTA 6 Online - Latest News & Countdown | Grand Theft Auto VI">
+    <meta property="og:description" content="Ultimate hub for GTA 6 news, release countdown, gameplay updates, and creator interviews from the Indian gaming community.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rockstargta6.online">
+    <meta property="og:image" content="https://rockstargta6.online/og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GTA 6 Online - Latest News & Countdown">
+    <meta name="twitter:description" content="Get the latest GTA 6 news, release date countdown, and exclusive interviews with Indian gaming creators.">
+    <meta name="theme-color" content="#1F2937">
+    <link rel="canonical" href="https://rockstargta6.online/">
+    
+    <!-- Structured Data / Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "GTA 6 Online",
+        "description": "Grand Theft Auto VI News, Countdown & Gaming Updates",
+        "url": "https://rockstargta6.online",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://rockstargta6.online/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        * {
+            -webkit-user-select: auto;
+            -moz-user-select: auto;
+            user-select: auto;
+        }
+        
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: #f8f9fa;
         }
+        
+        .ad-space {
+            min-height: 250px;
+            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+            border: 2px dashed #d1d5db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            color: #9ca3af;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-align: center;
+        }
+        
+        .ad-space-horizontal {
+            min-height: 120px;
+            background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+            border: 2px dashed #d1d5db;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            color: #9ca3af;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-align: center;
+        }
+        
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        
+        @media (max-width: 768px) {
+            .ad-space {
+                min-height: 280px;
+            }
+            .ad-space-horizontal {
+                min-height: 250px;
+            }
+        }
     </style>
 </head>
-<body class="text-gray-900 antialiased">
+<body class="text-gray-900 antialiased scroll-smooth">
 
-    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-black rounded-lg flex items-center justify-center font-bold text-white text-lg">R*</div>
+            <a href="/" class="flex items-center gap-2 group">
+                <div class="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center font-bold text-white text-lg group-hover:shadow-lg transition-shadow">
+                    R*
+                </div>
                 <span class="text-xl font-bold tracking-tight text-gray-900">GTA 6<span class="text-blue-600">.online</span></span>
-            </div>
-            <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600">
-                <a href="#" class="text-blue-600 hover:text-blue-700">Home</a>
-                <a href="#countdown" class="hover:text-gray-900">Release Timer</a>
-                <a href="#news" class="hover:text-gray-900">Rockstar News</a>
-                <a href="#interviews" class="hover:text-gray-900">Interviews</a>
-                <a href="#games" class="hover:text-gray-900">Other Games</a>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+                <a href="/#home" class="text-blue-600 font-semibold hover:text-blue-700 transition-colors">Home</a>
+                <a href="/#countdown" class="hover:text-gray-900 transition-colors">Countdown</a>
+                <a href="/#news" class="hover:text-gray-900 transition-colors">News</a>
+                <a href="/#interviews" class="hover:text-gray-900 transition-colors">Creators</a>
+                <a href="/#legacy" class="hover:text-gray-900 transition-colors">Games</a>
+                <a href="/news-hub.html" class="hover:text-gray-900 transition-colors">All News</a>
             </nav>
-            <div>
-                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-amber-800 bg-amber-50 rounded-full border border-amber-200">
-                    <span class="w-1.5 h-1.5 bg-amber-500 rounded-full animate-pulse"></span> Fan Portal
-                </span>
-            </div>
-        </div>
+            
+                   </div>
     </header>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12">
 
-        <div class="w-full bg-gray-100 border border-dashed border-gray-300 rounded-2xl h-24 flex items-center justify-center text-xs text-gray-400 uppercase tracking-widest">
-            [ Advertisement Space - Top Leaderboard ]
-        </div>
-
-        <section id="countdown" class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div class="lg:col-span-2 bg-white rounded-3xl p-8 border border-gray-100 shadow-xs flex flex-col justify-between space-y-6">
+       
+        <!-- Hero Countdown Section -->
+        <section id="home" class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div class="lg:col-span-2 bg-white rounded-3xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between space-y-6">
                 <div>
-                    <h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl text-gray-900">
-                        Grand Theft Auto VI <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">The Next Era of Gaming</span>
+                    <h1 class="text-3xl font-extrabold tracking-tight sm:text-5xl text-gray-900 leading-tight">
+                        Grand Theft Auto VI <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">The Next Era Begins</span>
                     </h1>
-                    <p class="mt-3 text-base text-gray-500 max-w-xl">
-                        Tracking the countdown to the most anticipated open-world masterpiece by Rockstar Games. Stay tuned for real-time updates.
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl leading-relaxed">
+                        Experience the most ambitious open-world game ever created by Rockstar Games. GTA 6 is coming to redefine gaming in Fall 2025/2026. Track every moment with our live countdown timer.
                     </p>
                 </div>
 
-                <div class="grid grid-cols-4 gap-3 max-w-md bg-gray-50 p-4 rounded-2xl border border-gray-100">
+                <div class="grid grid-cols-4 gap-3 bg-gradient-to-br from-gray-50 to-gray-100 p-6 rounded-2xl border border-gray-200">
                     <div class="text-center">
-                        <span id="days" class="block text-2xl sm:text-3xl font-bold text-gray-900 tabular-nums">00</span>
-                        <span class="text-[10px] font-medium text-gray-400 uppercase tracking-wider">Days</span>
+                        <span id="days" class="block text-3xl sm:text-4xl font-bold text-gray-900 tabular-nums">00</span>
+                        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider block mt-2">Days</span>
                     </div>
                     <div class="text-center">
-                        <span id="hours" class="block text-2xl sm:text-3xl font-bold text-gray-900 tabular-nums">00</span>
-                        <span class="text-[10px] font-medium text-gray-400 uppercase tracking-wider">Hours</span>
+                        <span id="hours" class="block text-3xl sm:text-4xl font-bold text-gray-900 tabular-nums">00</span>
+                        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider block mt-2">Hours</span>
                     </div>
                     <div class="text-center">
-                        <span id="minutes" class="block text-2xl sm:text-3xl font-bold text-gray-900 tabular-nums">00</span>
-                        <span class="text-[10px] font-medium text-gray-400 uppercase tracking-wider">Mins</span>
+                        <span id="minutes" class="block text-3xl sm:text-4xl font-bold text-gray-900 tabular-nums">00</span>
+                        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider block mt-2">Minutes</span>
                     </div>
                     <div class="text-center">
-                        <span id="seconds" class="block text-2xl sm:text-3xl font-bold text-gray-900 tabular-nums">00</span>
-                        <span class="text-[10px] font-medium text-gray-400 uppercase tracking-wider">Secs</span>
+                        <span id="seconds" class="block text-3xl sm:text-4xl font-bold text-gray-900 tabular-nums">00</span>
+                        <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider block mt-2">Seconds</span>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-gradient-to-br from-gray-900 to-slate-800 text-white rounded-3xl p-8 flex flex-col justify-between">
+            <!-- Info Card -->
+            <div class="bg-gradient-to-br from-gray-900 via-slate-800 to-gray-900 text-white rounded-3xl p-8 flex flex-col justify-between shadow-lg">
                 <div>
-                    <span class="text-xs font-bold tracking-widest text-blue-400 uppercase">Target Window</span>
-                    <h2 class="text-2xl font-bold mt-1">Fall 2025 / 2026</h2>
+                    <span class="text-xs font-bold tracking-widest text-blue-400 uppercase">Official Release Window</span>
+                    <h2 class="text-3xl font-bold mt-3">Fall 2025 / 2026</h2>
                 </div>
-                <div class="pt-6 border-t border-gray-700/50 space-y-3 text-sm text-gray-300">
-                    <div class="flex justify-between"><span>Developer:</span> <strong class="text-white">Rockstar Games</strong></div>
-                    <div class="flex justify-between"><span>Platforms:</span> <strong class="text-white">PS5, Xbox Series X/S</strong></div>
-                    <div class="flex justify-between"><span>Location:</span> <strong class="text-white">Vice City (Leonida)</strong></div>
+                <div class="pt-6 border-t border-gray-700/50 space-y-4 text-sm text-gray-300">
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-400">📌 Developer</span>
+                        <strong class="text-white">Rockstar Games</strong>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-400">🎮 Platforms</span>
+                        <strong class="text-white">PS5, Xbox Series X/S</strong>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-400">🌍 Setting</span>
+                        <strong class="text-white">Vice City (Leonida)</strong>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-400">💰 Pre-Orders</span>
+                        <strong class="text-white">Coming Soon</strong>
+                    </div>
                 </div>
             </div>
         </section>
 
+       
+        <!-- Latest News Section -->
         <section id="news" class="space-y-6">
-            <div class="flex items-center justify-between">
-                <h2 class="text-2xl font-bold tracking-tight text-gray-900">Latest Rockstar Updates</h2>
-                <a href="#" class="text-sm font-semibold text-blue-600 hover:underline">View all news &rarr;</a>
+            <div class="flex items-center justify-between mb-2">
+                <div>
+                    <h2 class="text-3xl font-bold tracking-tight text-gray-900">Latest Rockstar Updates</h2>
+                    <p class="text-gray-600 text-sm mt-1">Breaking news, leaks, and official announcements from Rockstar Games</p>
+                </div>
+                <a href="/news-hub.html" class="text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors px-4 py-2 bg-blue-50 rounded-lg hidden sm:inline-block">
+                    View all news →
+                </a>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-xs hover:shadow-md transition-shadow">
-                    <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400">Image Placeholder</div>
-                    <div class="p-5 space-y-2">
-                        <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">GTA 6 News</span>
-                        <h3 class="font-bold text-lg leading-snug text-gray-900"><a href="#" class="hover:text-blue-600">Rockstar Intel: Inside the Latest Leak & Trailer Rumors</a></h3>
-                        <p class="text-sm text-gray-500 line-clamp-2">A deep dive into what the recent community analyses reveal about the physics engine and map size...</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- News Card 1 -->
+                <article class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
+                    <div class="h-48 bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center text-gray-400 font-semibold group-hover:from-blue-200 group-hover:to-blue-100 transition-colors">
+                        🎬 GTA 6 Official Image
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs font-bold text-blue-600 uppercase tracking-wider bg-blue-50 px-3 py-1 rounded-full inline-block">GTA 6 News</span>
+                        <h3 class="font-bold text-lg leading-snug text-gray-900 group-hover:text-blue-600 transition-colors">
+                            <a href="#" class="hover:underline">Rockstar Official: Inside the Latest Gameplay Leak & Trailer Rumors</a>
+                        </h3>
+                        <p class="text-sm text-gray-600 line-clamp-3">A comprehensive deep dive into what community analyses reveal about the advanced physics engine, expanded map size, and interactive world systems coming to GTA 6...</p>
+                        <div class="pt-2 flex items-center justify-between text-xs text-gray-500">
+                            <span>5 hours ago</span>
+                            <span>5 min read</span>
+                        </div>
                     </div>
                 </article>
-                <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-xs hover:shadow-md transition-shadow">
-                    <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400">Image Placeholder</div>
-                    <div class="p-5 space-y-2">
-                        <span class="text-xs font-semibold text-purple-600 uppercase tracking-wider">GTA Online</span>
-                        <h3 class="font-bold text-lg leading-snug text-gray-900"><a href="#" class="hover:text-purple-600">Weekly DLC Event Updates and New Vehicle Drops</a></h3>
-                        <p class="text-sm text-gray-500 line-clamp-2">Everything you need to know about this week's double cash reward multipliers and discounts.</p>
+
+                <!-- News Card 2 -->
+                <article class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
+                    <div class="h-48 bg-gradient-to-br from-purple-100 to-purple-50 flex items-center justify-center text-gray-400 font-semibold group-hover:from-purple-200 group-hover:to-purple-100 transition-colors">
+                        🎮 GTA Online Updates
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs font-bold text-purple-600 uppercase tracking-wider bg-purple-50 px-3 py-1 rounded-full inline-block">GTA Online</span>
+                        <h3 class="font-bold text-lg leading-snug text-gray-900 group-hover:text-purple-600 transition-colors">
+                            <a href="#" class="hover:underline">Weekly DLC Event: Double Cash Rewards & New Vehicle Drops</a>
+                        </h3>
+                        <p class="text-sm text-gray-600 line-clamp-3">Complete guide to this week's multiplier bonuses, exclusive vehicle releases, limited-time missions, and premium job updates. Don't miss out on the biggest earning opportunities...</p>
+                        <div class="pt-2 flex items-center justify-between text-xs text-gray-500">
+                            <span>2 hours ago</span>
+                            <span>4 min read</span>
+                        </div>
                     </div>
                 </article>
-                <article class="bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-xs hover:shadow-md transition-shadow">
-                    <div class="h-48 bg-gray-200 flex items-center justify-center text-gray-400">Image Placeholder</div>
-                    <div class="p-5 space-y-2">
-                        <span class="text-xs font-semibold text-amber-600 uppercase tracking-wider">Red Dead Redemption</span>
-                        <h3 class="font-bold text-lg leading-snug text-gray-900"><a href="#" class="hover:text-amber-600">Is a Next-Gen RDR2 Patch Finally in Development?</a></h3>
-                        <p class="text-sm text-gray-500 line-clamp-2">New code modifications found in the Rockstar Launcher spark massive speculation among fans.</p>
+
+                <!-- News Card 3 -->
+                <article class="bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 group">
+                    <div class="h-48 bg-gradient-to-br from-amber-100 to-amber-50 flex items-center justify-center text-gray-400 font-semibold group-hover:from-amber-200 group-hover:to-amber-100 transition-colors">
+                        🤠 Red Dead Redemption
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs font-bold text-amber-600 uppercase tracking-wider bg-amber-50 px-3 py-1 rounded-full inline-block">Red Dead</span>
+                        <h3 class="font-bold text-lg leading-snug text-gray-900 group-hover:text-amber-600 transition-colors">
+                            <a href="#" class="hover:underline">Is a Next-Gen RDR2 Patch Finally in Development?</a>
+                        </h3>
+                        <p class="text-sm text-gray-600 line-clamp-3">New code modifications discovered in the Rockstar Launcher spark massive speculation among fans. Inside sources hint at enhanced ray tracing and 4K resolution improvements...</p>
+                        <div class="pt-2 flex items-center justify-between text-xs text-gray-500">
+                            <span>12 hours ago</span>
+                            <span>6 min read</span>
+                        </div>
                     </div>
                 </article>
             </div>
         </section>
 
-        <div class="w-full bg-gray-100 border border-dashed border-gray-300 rounded-2xl h-20 flex items-center justify-center text-xs text-gray-400 uppercase tracking-widest">
-            [ Advertisement Space - Mid Content ]
-        </div>
-
-        <section id="interviews" class="bg-white rounded-3xl p-8 border border-gray-100 shadow-xs space-y-6">
-            <div class="max-w-xl">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-50 text-red-700 border border-red-100">Coming Soon</span>
-                <h2 class="text-2xl font-bold tracking-tight text-gray-900 mt-2">Indian Gaming Creators Spotlight</h2>
-                <p class="text-sm text-gray-500 mt-1">Exclusive interviews, inside thoughts, and predictions about GTA 6 from India's biggest gaming streamers and YouTube personalities.</p>
+      
+        <!-- Featured Content Section -->
+                <section class="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm">
+                    <h2 class="text-2xl font-bold tracking-tight text-gray-900 mb-4">What's New in GTA Universe?</h2>
+                    <div class="prose prose-sm max-w-none text-gray-700">
+                        <p class="mb-4">
+                            Rockstar Games has been relatively quiet about GTA 6 details, but leaks and official hints suggest a revolutionary experience. The game will feature an expanded Vice City location (codenamed Leonida), multiple playable characters, and groundbreaking AI systems that make the world feel alive like never before.
+                        </p>
+                        <h3 class="text-lg font-semibold text-gray-900 mt-6 mb-3">Expected Features</h3>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li>✓ Dynamic weather and time systems</li>
+                            <li>✓ Advanced physics and destruction mechanics</li>
+                            <li>✓ Multiple playable protagonists</li>
+                            <li>✓ Expanded online multiplayer world</li>
+                            <li>✓ Next-gen graphics capabilities</li>
+                            <li>✓ Massive open-world sandbox experience</li>
+                        </ul>
+                    </div>
+                </section>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-2">
-                <div class="p-4 rounded-xl bg-gray-50 border border-gray-100 flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-gray-300 shrink-0"></div>
-                    <div>
-                        <h4 class="text-sm font-bold text-gray-900">Creator Interview #1</h4>
-                        <p class="text-xs text-gray-400">Stay Tuned</p>
-                    </div>
+            
+            <div>
+
+
+                
+        <!-- Interviews Section -->
+        <section id="interviews" class="bg-white rounded-3xl p-8 border border-gray-200 shadow-sm space-y-6">
+            <div class="max-w-2xl">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-red-50 text-red-700 border border-red-200 uppercase tracking-wider">Coming Soon</span>
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 mt-3">Indian Gaming Creators Spotlight</h2>
+                <p class="text-base text-gray-600 mt-2 leading-relaxed">
+                    Exclusive in-depth interviews, insider predictions, and first reactions from India's biggest gaming streamers, YouTube personalities, and esports professionals about GTA 6. Get their thoughts on gameplay mechanics, expectations, and exclusive tips.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
+                <div class="p-5 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 shrink-0 mb-3"></div>
+                    <h4 class="text-sm font-bold text-gray-900">Creator Interview #1</h4>
+                    <p class="text-xs text-gray-500 mt-1">Launching Q2 2026</p>
                 </div>
-                <div class="p-4 rounded-xl bg-gray-50 border border-gray-100 flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-gray-300 shrink-0"></div>
-                    <div>
-                        <h4 class="text-sm font-bold text-gray-900">Creator Interview #2</h4>
-                        <p class="text-xs text-gray-400">Stay Tuned</p>
-                    </div>
+                <div class="p-5 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 shrink-0 mb-3"></div>
+                    <h4 class="text-sm font-bold text-gray-900">Creator Interview #2</h4>
+                    <p class="text-xs text-gray-500 mt-1">Launching Q2 2026</p>
                 </div>
-                <div class="p-4 rounded-xl bg-gray-50 border border-gray-100 flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-gray-300 shrink-0"></div>
-                    <div>
-                        <h4 class="text-sm font-bold text-gray-900">Creator Interview #3</h4>
-                        <p class="text-xs text-gray-400">Stay Tuned</p>
-                    </div>
+                <div class="p-5 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-br from-pink-400 to-pink-600 shrink-0 mb-3"></div>
+                    <h4 class="text-sm font-bold text-gray-900">Creator Interview #3</h4>
+                    <p class="text-xs text-gray-500 mt-1">Launching Q2 2026</p>
                 </div>
-                <div class="p-4 rounded-xl bg-gray-50 border border-gray-100 flex items-center gap-3">
-                    <div class="w-10 h-10 rounded-full bg-gray-300 shrink-0"></div>
-                    <div>
-                        <h4 class="text-sm font-bold text-gray-900">Creator Interview #4</h4>
-                        <p class="text-xs text-gray-400">Stay Tuned</p>
-                    </div>
+                <div class="p-5 rounded-xl bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-full bg-gradient-to-br from-green-400 to-green-600 shrink-0 mb-3"></div>
+                    <h4 class="text-sm font-bold text-gray-900">Creator Interview #4</h4>
+                    <p class="text-xs text-gray-500 mt-1">Launching Q2 2026</p>
                 </div>
             </div>
         </section>
 
-        <section id="games" class="space-y-4">
-            <h2 class="text-xl font-bold text-gray-900">The Rockstar Legacy</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-                <div class="p-4 bg-white rounded-xl border border-gray-100 text-center font-semibold text-sm text-gray-700 hover:border-gray-300 cursor-pointer">GTA V & Online</div>
-                <div class="p-4 bg-white rounded-xl border border-gray-100 text-center font-semibold text-sm text-gray-700 hover:border-gray-300 cursor-pointer">Red Dead Redemption II</div>
-                <div class="p-4 bg-white rounded-xl border border-gray-100 text-center font-semibold text-sm text-gray-700 hover:border-gray-300 cursor-pointer">GTA IV Chronicles</div>
-                <div class="p-4 bg-white rounded-xl border border-gray-100 text-center font-semibold text-sm text-gray-700 hover:border-gray-300 cursor-pointer">Max Payne Series</div>
+      
+        <!-- Rockstar Legacy Section -->
+        <section id="legacy" class="space-y-6">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-900">Rockstar Games Legacy</h2>
+                <p class="text-gray-600 text-sm mt-1">Explore the legendary catalog of games from Rockstar Games</p>
             </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="p-6 bg-white rounded-xl border border-gray-200 text-center hover:shadow-md transition-all hover:border-blue-300 cursor-pointer group">
+                    <div class="text-3xl mb-2">🚗</div>
+                    <h3 class="font-bold text-gray-900 group-hover:text-blue-600 transition-colors">GTA V & Online</h3>
+                    <p class="text-xs text-gray-500 mt-2">Still going strong since 2013</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl border border-gray-200 text-center hover:shadow-md transition-all hover:border-blue-300 cursor-pointer group">
+                    <div class="text-3xl mb-2">🤠</div>
+                    <h3 class="font-bold text-gray-900 group-hover:text-blue-600 transition-colors">Red Dead II</h3>
+                    <p class="text-xs text-gray-500 mt-2">Wild West masterpiece</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl border border-gray-200 text-center hover:shadow-md transition-all hover:border-blue-300 cursor-pointer group">
+                    <div class="text-3xl mb-2">🏙️</div>
+                    <h3 class="font-bold text-gray-900 group-hover:text-blue-600 transition-colors">GTA IV Chronicles</h3>
+                    <p class="text-xs text-gray-500 mt-2">Liberty City legend</p>
+                </div>
+                <div class="p-6 bg-white rounded-xl border border-gray-200 text-center hover:shadow-md transition-all hover:border-blue-300 cursor-pointer group">
+                    <div class="text-3xl mb-2">🔫</div>
+                    <h3 class="font-bold text-gray-900 group-hover:text-blue-600 transition-colors">Max Payne Series</h3>
+                    <p class="text-xs text-gray-500 mt-2">Noir action gaming</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="bg-gradient-to-br from-blue-600 to-purple-600 rounded-3xl p-8 text-white text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-3">Stay Updated on GTA 6</h2>
+            <p class="text-blue-100 mb-6 max-w-xl mx-auto">Get the latest news, updates, and countdown notifications delivered to your inbox</p>
+            <div class="flex gap-3 max-w-md mx-auto">
+                <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg text-gray-900 font-medium focus:outline-none focus:ring-2 focus:ring-blue-300">
+                <button class="px-6 py-3 bg-white text-blue-600 font-bold rounded-lg hover:bg-blue-50 transition-colors">Subscribe</button>
+            </div>
+            <p class="text-xs text-blue-200 mt-3">We respect your privacy. Unsubscribe at any time.</p>
         </section>
 
     </main>
 
-    <footer class="bg-white border-t border-gray-100 mt-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Brand Info -->
                 <div class="space-y-3">
                     <div class="flex items-center gap-2">
-                        <div class="w-6 h-6 bg-black rounded flex items-center justify-center font-bold text-white text-xs">R*</div>
-                        <span class="font-bold text-gray-900">Rockstar GTA 6 Portal</span>
+                        <div class="w-6 h-6 bg-gradient-to-br from-blue-600 to-purple-600 rounded flex items-center justify-center font-bold text-white text-xs">R*</div>
+                        <span class="font-bold text-white">GTA 6 Online</span>
                     </div>
-                    <p class="text-xs text-gray-500 leading-relaxed">
-                        This website is an independent, community-driven platform created by fans for fans. It is not affiliated, endorsed, associated, or officially connected with Rockstar Games, Take-Two Interactive, or any of their subsidiaries.
+                    <p class="text-xs leading-relaxed text-gray-400">
+                        Your independent, community-driven GTA 6 information hub. We are not affiliated with Rockstar Games or Take-Two Interactive.
                     </p>
                 </div>
+
+                <!-- Quick Links -->
                 <div class="space-y-3">
-                    <h4 class="text-sm font-bold text-gray-900">Legal & Transparency</h4>
-                    <ul class="text-xs text-gray-500 space-y-2">
-                        <li><a href="#" class="hover:text-blue-600">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-blue-600">Terms of Service</a></li>
-                        <li><a href="#" class="hover:text-blue-600">Cookie Policy</a></li>
-                        <li><a href="#" class="hover:text-blue-600">DMCA / Copyright Compliance</a></li>
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wide">Quick Links</h4>
+                    <ul class="text-xs space-y-2">
+                        <li><a href="/#home" class="hover:text-blue-400 transition-colors">Home</a></li>
+                        <li><a href="/#countdown" class="hover:text-blue-400 transition-colors">Countdown</a></li>
+                        <li><a href="/#news" class="hover:text-blue-400 transition-colors">News Hub</a></li>
+                        <li><a href="/#interviews" class="hover:text-blue-400 transition-colors">Creator Interviews</a></li>
                     </ul>
                 </div>
+
+                <!-- Legal & Policies -->
                 <div class="space-y-3">
-                    <h4 class="text-sm font-bold text-gray-900">Contact Team</h4>
-                    <p class="text-xs text-gray-500">For inquiries, news submissions, or creator interview slots, reach out directly at:</p>
-                    <a href="mailto:admin@rockstargta6.online" class="text-xs font-semibold text-blue-600 hover:underline block">admin@rockstargta6.online</a>
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wide">Legal</h4>
+                    <ul class="text-xs space-y-2">
+                        <li><a href="/privacy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a></li>
+                        <li><a href="/terms.html" class="hover:text-blue-400 transition-colors">Terms of Service</a></li>
+                        <li><a href="/cookies.html" class="hover:text-blue-400 transition-colors">Cookie Policy</a></li>
+                        <li><a href="/disclaimer.html" class="hover:text-blue-400 transition-colors">Disclaimer</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social -->
+                <div class="space-y-3">
+                    <h4 class="text-sm font-bold text-white uppercase tracking-wide">Contact</h4>
+                    <p class="text-xs text-gray-400">Reach out for news submissions and collaborations:</p>
+                    <a href="mailto:admin@rockstargta6.online" class="text-xs font-semibold text-blue-400 hover:text-blue-300 transition-colors block">admin@rockstargta6.online</a>
+                    <div class="flex gap-3 pt-2">
+                        <a href="#" title="Twitter" class="hover:text-blue-400 transition-colors">𝕏</a>
+                        <a href="#" title="YouTube" class="hover:text-red-400 transition-colors">▶</a>
+                        <a href="#" title="Discord" class="hover:text-purple-400 transition-colors">💬</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="border-t border-gray-100 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
-                <p>&copy; 2026 rockstargta6.online. All rights reserved.</p>
-                <p>Designed with clean AI architecture.</p>
+            <div class="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+                <p>&copy; 2026 rockstargta6.online. All rights reserved. Fan-made portal.</p>
+                <p>GTA is a trademark of Rockstar Games. We are independent creators.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Countdown Timer Script -->
     <script>
         const targetDate = new Date("December 31, 2026 00:00:00").getTime();
 
@@ -221,7 +419,8 @@
             const difference = targetDate - now;
 
             if (difference <= 0) {
-                document.getElementById("countdown").innerHTML = "<div class='text-xl font-bold p-4 text-center text-blue-600 w-full'>The Time Has Arrived!</div>";
+                document.getElementById("countdown").innerHTML = 
+                    "<div class='col-span-3 text-2xl font-bold p-8 text-center text-blue-600 bg-blue-50 rounded-2xl border border-blue-200 w-full'>🎉 The Time Has Arrived! GTA 6 is Here!</div>";
                 return;
             }
 
